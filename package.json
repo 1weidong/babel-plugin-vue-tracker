@@ -1,7 +1,7 @@
 {
   "name": "babel-plugin-vue-tracker",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.21.4",
+    "@babel/helper-module-imports": "^7.21.4",
     "@babel/parser": "^7.21.4",
+    "@babel/template": "^7.20.7",
     "vue-template-compiler": "^2.7.14"
   }
 }
