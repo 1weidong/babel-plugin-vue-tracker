@@ -92,14 +92,13 @@ function setAutoTracker(path, state, template, comentNode) {
     }
 }
 module.exports = function (babel) {
-  const { types: t, template } = babel;
+  const { template } = babel;
 
   return {
     visitor: {
         ObjectMethod(path, state) {
             const coment = path.get("leadingComments")[0] || {};
             const comentNode = coment.node;
-            // console.log(comentNode)
             if (comentNode) {
                 setAutoTracker(path, state, template, comentNode); 
             }
