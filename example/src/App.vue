@@ -23,8 +23,8 @@ export default {
    * @param {number} city_id - 城市id
    * @param {boolean} isTracker - 是否调用埋点
    */
-    async init(trackerId, city_id, isTracker) {
-      await console.log(trackerId, city_id, isTracker)
+    init(trackerId, city_id, isTracker) {
+      console.log(trackerId, city_id, isTracker)
     },
     b() {
       console.log(22222)

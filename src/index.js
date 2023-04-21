@@ -77,7 +77,6 @@ function setAutoTracker(path, state, template, comentNode) {
             // 获取注释中的参数
             const commentParamAry = comentStrAry.slice(1);
             const paramAry = parseComment(commentParamAry)
-
             const isError = verifyFuncParams(path, paramAry);
 
             // 注释中的参数未在函数中声明则跳过
